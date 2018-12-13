@@ -1,0 +1,58 @@
+
+ body{
+    background-color: grey;
+ }
+.card {
+    margin:  auto;
+    background-color: white;
+}
+
+.card-img-top {
+    height: 250px;
+    width:  250px;
+    border-radius: 10% !important;
+    object-fit: cover;
+
+
+}
+
+.card-body {
+    padding: 24px;
+    text-align: center;
+    color: #FF8000;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-header  {
+    text-align: center;
+    color: #FF8000;
+
+}
+.card-header i{
+    text-align: center;
+    color: #FF8000;
+
+}
+.card-text{
+    color:grey;
+}
+
+.barra{
+    background-color: #FF8000;
+    text-decoration-color: #FF8000;
+}
+        
+.cadastrar{
+    text-align: center;
+}
+
+label{
+    text-align: center;
+}
+
