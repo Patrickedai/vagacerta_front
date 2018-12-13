@@ -11,7 +11,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Cadastro Vaga</title>
+  <title>Detalhes Vaga</title>
 </head>
 
 <body>
@@ -23,37 +23,35 @@
             </div>
             <div class="card-header">
               <nav class="navbar navbar-light light-blue lighten-4">
-                 <b>Cadastro da Vaga</b>
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-angle-left"></i></button>
+                 <b>Detalhes da Vaga</b>
               </nav>
             </div>
             <br>
             <main role="main" class="container">
                 <div class="card-body">
                     <h5 class="card-title">Augusto Nonato</h5>
+                    <div>
+                      <button type="button" class="btn btn-outline-warning text-dark">Endereço</button>
+                      <button type="button" class="btn btn-outline-warning text-dark">Mapa</button>
+                      <button type="button" class="btn btn-outline-warning text-dark">Como Chegar</button>
+                    </div>
                 </div>
+                
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-muted"><strong>Matricula</strong> MATRICULA</li>
+                    <li class="list-group-item text-muted"><strong>CPF</strong> 123.456.789-10</li>
                     <li class="list-group-item text-muted"><strong>Endereço</strong></li>
                     <li class="list-group-item text-muted">ENREÇO VINDO DO BANCO - TAB VAGAS</li>
                     
                 </ul>
-            
+             <br>
+             <form>
+                <button type="button" class="btn btn-outline-warning btn-block">Traçar rota</button>
+                <button type="button" class="btn btn-outline-warning text-dark">Efetuar Reserva</button>
+                <button type="button" class="btn btn-outline-warning text-dark">Como Chegar</button>
+           </form>
             <br>
-            <div class="alert alert-warning" role="alert">
-                7 CONTADOR DE VAGAS LIVRES
-            </div>
-            <div class="alert alert-warning" role="alert">
-                2 CONTADOR DE RESERVAS
-            </div>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="fielPlaca" aria-describedby="placaHelp" placeholder="Insira placa">
-                </div>
-
-                <button type="button" class="btn btn-outline-warning btn-block">Alocar vaga</button>
-                <button type="button" class="btn btn-outline-warning btn-block">Liberar vaga</button>
-                <br>
-              </form>
             </main>
           </div>
         </div>
