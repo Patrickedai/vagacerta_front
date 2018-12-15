@@ -1,0 +1,140 @@
+.rating {
+    display: flex;
+    width: 100%;
+  }
+
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+    follow these rules. Every browser that supports :checked also supports :not(), so
+    it doesn’t make the test unnecessarily selective */
+  .rating:not(:checked) > input {
+      position:absolute;
+      top:-9999px;
+      clip:rect(0,0,0,0);
+  }
+
+  .rating:not(:checked) > label {
+      float:right;
+      width:1em;
+      /* padding:0 .1em; */
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size:300%;
+      /* line-height:1.2; */
+      color:#ddd;
+  }
+
+  .rating:not(:checked) > label:before {
+      content: '★ ';
+  }
+
+  .rating > input:checked ~ label {
+      color: dodgerblue;
+      
+  }
+
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+      color: dodgerblue;
+      
+  }
+
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+      color: dodgerblue;
+      
+  }
+
+  .rating > label:active {
+      position:relative;
+      top:2px;
+      left:2px;
+  }
+
+
+  #header{
+    border-top: 20px solid orange;
+    box-shadow: 1px 1px 10px #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  #header .row{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  #header .voltar{
+    font-size:20px;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .menu-vaga{
+      margin-top: 30px;
+      padding: 10px;
+      justify-content: space-between;
+      background-color: #3a3a3a;
+  }
+  .menu-vaga .nav-item a{
+      padding: 0;
+      color: #fff;
+  }
+
+  .list-group.vagas .action{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .list-group.vagas .action a{
+      color: #fff;
+  }
+
+
+  .list-group.vagas .list-group-item{
+      border: 1px solid orange;
+      margin-bottom: 10px;
+  }
+
+  .block.address h2 {
+    background: #ffc107;
+    font-size: 10px;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.block{
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#logo img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#actions .btn{
+    width: 100%;
+}
+
+#actions{
+    display: flex;
+}
+
+.form-group.center button{
+    margin-right: 10px;
+}
+.form-group.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
